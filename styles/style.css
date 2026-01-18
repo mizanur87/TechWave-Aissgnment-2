@@ -1,0 +1,100 @@
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Common Classes  */
+
+.width-class {
+  max-width: 75rem;
+}
+
+.btn {
+  background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+/* Heading started here  */
+
+/* Navigation starts here  */
+
+header {
+  max-width: 100%;
+  background-color: #1a0b2e;
+
+  border-bottom: 1px solid grey;
+}
+
+.parent-nav {
+  display: flex;
+
+  height: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.subs-button-parent {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-logo > p {
+  font-size: 2.625rem;
+  font-weight: 800;
+}
+
+.nav-logo span {
+  background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.ham-menu {
+  display: none;
+}
+
+/* Small Device Responsive  */
+
+@media screen and (max-width: 576px) {
+  .nav-logo > p {
+    font-size: 1.625rem;
+    font-weight: 800;
+    margin-left: 1.25rem;
+  }
+
+  .nav-menu,
+  .btn {
+    display: none;
+  }
+
+  .ham-menu {
+    display: inline;
+    margin-right: 1.25rem;
+  }
+}
