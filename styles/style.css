@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  max-width: 100%;
 }
 
 /* Common Classes  */
@@ -17,6 +18,15 @@
 }
 
 .btn {
+  background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 2rem;
+}
+
+.btn2 {
   background: linear-gradient(to right, #f7e93f, #fb09b4, #9100f8);
   border: none;
   font-size: 1rem;
@@ -79,6 +89,140 @@ header {
   display: none;
 }
 
+/* Hero Content  */
+/* 
+.Hero-content-parent {
+  background-image: url(../assets/hero-bg.png);
+  max-width: 100%;
+
+  
+  height: 760px;
+}
+
+.hero-content {
+  margin: 0 auto;
+  max-width: 550px;
+  height: 558px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  top: 80px;
+  left: 35px;
+}
+
+.circle {
+  position: relative;
+  left: 3.9rem;
+}
+
+#mic {
+  position: relative;
+  bottom: 5.3rem;
+  right: 14.5rem;
+}
+
+.text-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.just-text h2 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  text-align: center;
+}
+.just-text p {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.8;
+}
+
+.hero-btns {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+} */
+
+/* Rating section */
+
+.rating-section {
+  max-width: 100%;
+  height: 647px;
+  background-color: #1a0b2e;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.the-line {
+  height: 0;
+  border: 0.2px solid white;
+  margin: 0 auto;
+  opacity: 30%;
+  position: relative;
+  top: 100px;
+}
+
+.writing-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 16px;
+  line-height: 1.5;
+  position: relative;
+  top: 50px;
+  /* border: 4px solid wheat; */
+}
+
+.writing-part h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.writing-part p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.rating-section {
+  /* border: 4px solid wheat; */
+}
+
+.rating-part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+  gap: 1rem;
+  vertical-align: middle;
+  position: relative;
+  top: 160px;
+  /* border: 4px solid wheat; */
+}
+
+.ratings h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(0, 255, 136, 1);
+}
+.ratings p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.8;
+  text-align: center;
+}
+
 /* Small Device Responsive  */
 
 @media screen and (max-width: 576px) {
@@ -95,6 +239,53 @@ header {
 
   .ham-menu {
     display: inline;
-    margin-right: 1.25rem;
+    position: relative;
+    right: 20px;
+  }
+
+  .hero-content {
+    position: relative;
+    top: 100px;
+    left: 12px;
+    right: 20px;
+  }
+
+  .mic-icons {
+    position: relative;
+    right: 2.5rem;
+    top: 5rem;
+  }
+
+  .text-part {
+    position: relative;
+    right: 10px;
+    bottom: 5rem;
+  }
+
+  .just-text h2 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .just-text p {
+    font-size: 0.85rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .rating-part {
+    grid-template-columns: repeat(2, 1fr);
+
+    position: relative;
+    top: 160px;
+    gap: 40px;
+  }
+
+  .writing-part h2 {
+    font-size: 2rem;
+  }
+  .writing-part p {
+    padding: 0 10px;
+    opacity: 0.8;
   }
 }
