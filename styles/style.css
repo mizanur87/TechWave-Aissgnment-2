@@ -223,6 +223,75 @@ header {
   text-align: center;
 }
 
+/* Why us section  */
+
+.why-us-parent {
+  max-width: 100%;
+  background: rgba(35, 14, 61, 1);
+  height: 1122px;
+}
+
+#h-text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 80px 0 0;
+}
+
+.why-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  vertical-align: middle;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 120px 200px;
+  grid-template-areas:
+    "f1 f2 f2"
+    "f1 f3 f3"
+    "f4 f4 f5";
+}
+
+.f1 {
+  grid-area: f1;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px 20px;
+}
+.f2 {
+  grid-area: f2;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px 20px;
+}
+.f3 {
+  grid-area: f3;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px 20px;
+}
+.f4 {
+  grid-area: f4;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px 20px;
+}
+.f5 {
+  grid-area: f5;
+  background: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px 20px;
+}
+
+.why-grid-container p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.why-grid-container h2 {
+  font-size: 1.375rem;
+}
+
 /* Small Device Responsive  */
 
 @media screen and (max-width: 576px) {
@@ -287,5 +356,27 @@ header {
   .writing-part p {
     padding: 0 10px;
     opacity: 0.8;
+  }
+
+  .why-us-parent {
+    height: 1440px;
+  }
+
+  #h-text {
+    font-size: 2rem;
+    padding: 40px 0 30px 0;
+  }
+  .why-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 20px;
+    gap: 16px;
+    grid-template-areas:
+      "f1"
+      "f2"
+      "f3"
+      "f4"
+      "f5";
   }
 }
