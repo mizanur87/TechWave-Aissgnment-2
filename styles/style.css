@@ -154,7 +154,7 @@ header {
 
 .rating-section {
   max-width: 100%;
-  height: 647px;
+  height: 500px;
   background-color: #1a0b2e;
   /* display: flex;
   flex-direction: column; */
@@ -190,10 +190,6 @@ header {
 .writing-part p {
   font-size: 1rem;
   font-weight: 400;
-}
-
-.rating-section {
-  /* border: 4px solid wheat; */
 }
 
 .rating-part {
@@ -363,13 +359,79 @@ header {
 
 .Host-parent {
   max-width: 100%;
-  height: 300px;
+  height: 21.875rem;
   background-color: #1a0b2e;
+}
+
+.host-card {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.875rem;
+  position: relative;
+  top: 40px;
+  background-color: rgba(37, 13, 68, 1);
+}
+
+.host-social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.host-social div {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #533c72;
+}
+
+.host-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 16px;
+}
+
+/* .host-image {
+} */
+
+.host-social img {
+  height: 13px;
+  width: 13px;
+  position: relative;
+  left: 7.5px;
+  top: 6px;
+}
+
+.Host-parent > h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.host-info h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.43rem;
+}
+.host-info p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.6;
 }
 
 /* Small Device Responsive  */
 
 @media screen and (max-width: 576px) {
+  .width-class {
+    max-width: 25rem;
+  }
   .nav-logo > p {
     font-size: 1.625rem;
     font-weight: 800;
@@ -417,6 +479,12 @@ header {
     text-align: center;
   }
 
+  /* Ratinge section  */
+
+  .rating-section {
+    height: 670px;
+  }
+
   .rating-part {
     grid-template-columns: repeat(2, 1fr);
 
@@ -432,6 +500,8 @@ header {
     padding: 0 10px;
     opacity: 0.8;
   }
+
+  /* Why us section  */
 
   .why-us-parent {
     height: 1440px;
@@ -480,5 +550,41 @@ header {
 
   .card-text h2 {
     font-size: 1.25rem;
+  }
+
+  /* Host part  */
+
+  .Host-parent {
+    height: 750px;
+  }
+
+  .host-card {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.5rem;
+    /* padding: 30px; */
+    position: relative;
+    top: 40px;
+  }
+
+  .host-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    gap: 16px;
+  }
+
+  .host-social {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .host-social img {
+    position: relative;
+    left: 1px;
+    top: 6px;
   }
 }
